@@ -1,0 +1,27 @@
+
+/*
+DART450
+Week 01
+Animate on keypress CSS
+Just some very basic styling of the input field
+*/
+
+body {
+	margin: 50px;
+}
+
+#inputfield {
+	position: absolute;
+	font-family: Helvetica, sans-serif;
+	font-size: 4em;
+	width: 50%;
+	font-weight: bold;
+	color: black;
+}
+
+.divClassRed{
+    background-color:red;
+}
+.divClassBlue{
+    background-color:blue;
+}
