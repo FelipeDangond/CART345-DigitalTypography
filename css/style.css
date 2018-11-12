@@ -1,27 +1,159 @@
+*{
+	-webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
 
-/*
-DART450
-Week 01
-Animate on keypress CSS
-Just some very basic styling of the input field
-*/
+
+}
+
 
 body {
-	margin: 50px;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-color: none;
+	margin: none;
+	padding: none;
+
 }
 
-#inputfield {
-	position: absolute;
-	font-family: Helvetica, sans-serif;
-	font-size: 4em;
-	width: 50%;
-	font-weight: bold;
-	color: black;
+video {
+  width:100vw;
+  height:100vh;
+  object-fit:cover;
+  z-index:-1;
+  position:fixed;
+	-webkit-filter: blur(30px) grayscale(0) contrast(7) ;
+  filter: blur(30px) grayscale(0)  contrast(7);
 }
 
-.divClassRed{
-    background-color:red;
+.shuffle {
+	position:absolute;
+    top:10px;
+    left:10px;
 }
-.divClassBlue{
-    background-color:blue;
+
+
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 50px; width: 50px;
+    border-radius: 25px;
+    background: red;
+		-webkit-filter:blur(30px);
+  }
+
+
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
+
+
+div {
+	width: 100px;
+height:100px;
+
 }
+
+div.a {
+
+ background-color:red;
+position:relative;
+-webkit-filter:blur(2px);
+}
+
+div.b {
+
+ background-color:green;
+position:relative;
+-webkit-filter:blur(2px);
+
+}
+
+div.c {
+
+ background-color:blue;
+position:relative;
+-webkit-filter:blur(2px);
+}
+
+div.d {
+
+ background-color:orange;
+position:relative;
+-webkit-filter:blur(2px);
+}
+div.e {
+
+ background-color:pink;
+position:relative;
+-webkit-filter:blur(2px);
+}
+
+div.f {
+
+ background-color:yellow;
+position:relative;
+-webkit-filter:blur(2px);
+}
+
+div.g {
+
+ background-color:purple;
+position:relative;
+-webkit-filter:blur(2px);
+}
+
+div.h {
+
+ background-color:cyan;
+position:relative;
+-webkit-filter:blur(2px);
+}
+
+
+p {
+	margin:auto;
+	font-size: 70px;
+	text-align: center;
+  animation:blinkingText 1s infinite;
+
+
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: white }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+
+
+#wrapper {
+	top: 0px !important;
+	margin: none;
+	text-align: justify;
+	height: 100%;
+	width: 30%;
+	position:fixed;
+	left: 35%;
+
+
+	}
+.container{
+	top: 0%;
+	width: 100%; /* Declare your value. Can be in relative units. */
+	height: 12.5%;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+
+	/* IE fix. */
+	*display: inline;
+	zoom: 1;
+	}
+#wrapper:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+    }
