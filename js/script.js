@@ -423,7 +423,7 @@ $( '.g'  ).draggable({
      var target = $("#T2").offset();
      if ((Math.abs(dropped.left - target.left) <= collisionOffset + 100)) {
        $( ".g" ).hide();
-       $( "#7" ).html("<p class='poem'>Nous sommes frais, nous sommes mûres.<br> Par-ci, par-là, à un moment ou à un autre")
+       $( "#7" ).html("<p class='poem'>nous ne sommes que fresques organisant un chaos")
     }
     else{
         gStart =false;
